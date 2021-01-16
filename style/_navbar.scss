@@ -1,0 +1,55 @@
+.navbar-home {
+  padding-top: 15px;
+  background-color: #fff;
+
+  @include media-breakpoint-down(md) {
+    background-color: #fff !important;
+  }
+
+  .nav-item {
+    .nav-link {
+      font-size: 1rem;
+      @include media-breakpoint-up(lg) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .profile-picture {
+    max-height: 45px;
+  }
+
+  .btn-login {
+    border: 1px solid #c6af90;
+    color: #c6af90;
+    border-radius: 8px;
+    transition: 0.5s;
+
+    &:hover {
+      text-decoration-color: #fff;
+      background-color: #c6af90;
+      color: #fff !important;
+    }
+  }
+
+  .btn-register {
+    background-color: #c6af90;
+    border-radius: 8px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #cf903a;
+      cursor: ne-resize;
+    }
+  }
+  .active {
+    color: #c6af90 !important;
+    font-weight: 500;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+}

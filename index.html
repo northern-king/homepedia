@@ -6,16 +6,353 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="best place to hunt your dream house" />
+    <meta name="author" content="homepedia.id" />
 
-    <title>Store - Your Best Marketplace</title>
+    <title>homepedia.id - Your Best Property Market</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="style/main.css" rel="stylesheet" />
   </head>
 
   <body>
+    <!-- ===== NAVBAR ====== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-home fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="listing.html" class="nav-link">Listing</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="btn btn-login nav-link px-4">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="register.html"
+                class="btn btn-register nav-link px-4 text-white"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== BANNER ===== -->
+    <div class="banner-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="title">
+              Your Trusted <br />
+              Property Agent
+            </h1>
+            <p class="title">Buy, Sell, and Rent</p>
+            <div class="search-box col-11 row">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    href="#pills-home"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                    >Buy</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    href="#pills-profile"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                    >Sell</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >For Rent</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="col-12 search-buy mt-3">
+                    <div class="row">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Location</option>
+                        <option value="1">Jakarta</option>
+                        <option value="2">Bandung</option>
+                        <option value="3">Surabaya</option>
+                      </select>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Property Type</option>
+                        <option value="1">Apartement</option>
+                        <option value="2">House</option>
+                        <option value="3">Office</option>
+                      </select>
+                      <a href="#" class="btn btn-search"
+                        ><img src="images/search.svg" alt="search icon"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                  single-origin coffee squid. Exercitation +1 labore velit, blog
+                  sartorial PBR leggings next level wes anderson artisan four
+                  loko farm-to-table craft beer twee. Qui photo booth
+                  letterpress, commodo enim craft beer mlkshk aliquip jean
+                  shorts ullamco ad vinyl cillum PBR. Homo nostrud organic,
+                  assumenda labore aesthetic magna delectus mollit. Keytar
+                  helvetica VHS salvia yr, vero magna velit sapiente labore
+                  stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                  sustainable jean shorts beard ut DIY ethical culpa terry
+                  richardson biodiesel. Art party scenester stumptown, tumblr
+                  butcher vero sint qui sapiente accusamus tattooed echo park.
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                >
+                  Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                  sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                  farm-to-table readymade. Messenger bag gentrify pitchfork
+                  tattooed craft beer, iphone skateboard locavore carles etsy
+                  salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                  Leggings gentrify squid 8-bit cred pitchfork. Williamsburg
+                  banh mi whatever gluten-free, carles pitchfork biodiesel fixie
+                  etsy retro mlkshk vice blog. Scenester cred you probably
+                  haven't heard of them, vinyl craft beer blog stumptown.
+                  Pitchfork sustainable tofu synth chambray yr.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="banner-image"
+              src="images/banner.jpg"
+              alt="banner home"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CATEGORIES ===== -->
+    <div class="categories-section">
+      <div class="container">
+        <div class="title text-center">
+          <h1>Our Categories</h1>
+          <p>Easy way to find your dream property</p>
+        </div>
+        <div class="row justify-content-around">
+          <div class="card" style="width: 19rem">
+            <img src="images/office.jpg" class="card-img-top" alt="office" />
+
+            <li class="list-group-item">Offices</li>
+
+            <div class="card-body justify-content-end">
+              <a href="#" class="card-link listing">19 Listing</a>
+              <a href="#" class="card-link details"
+                >View details <span>-></span></a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 19rem">
+            <img src="images/house.jpg" class="card-img-top" alt="office" />
+
+            <li class="list-group-item">Houses</li>
+
+            <div class="card-body justify-content-end">
+              <a href="#" class="card-link listing">19 Listing</a>
+              <a href="#" class="card-link details"
+                >View details <span>-></span></a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 19rem">
+            <img
+              src="images/apartement.jpg"
+              class="card-img-top"
+              alt="office"
+            />
+
+            <li class="list-group-item">Apartements</li>
+
+            <div class="card-body justify-content-between">
+              <a href="#" class="card-link listing">19 Listing</a>
+              <a href="#" class="card-link details"
+                >View details <span>-></span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RECENT LISTING ===== -->
+    <div class="recent-listing-section">
+      <div class="container">
+        <div class="title text-center">
+          <h1>Recent Listing</h1>
+        </div>
+        <div class="row justify-content-between">
+          <div class="card" style="width: 21rem">
+            <a href="#"
+              ><img
+                src="images/listing1.jpg"
+                class="card-img-top"
+                alt="listing"
+            /></a>
+            <div class="card-body">
+              <h6 class="card-title">
+                <span><img src="images/house.svg" alt="" /></span> Apartement
+              </h6>
+              <h2 class="card-text">Setia Budi Sky Garden</h2>
+              <p class="location">
+                <span><img src="images/location.svg" alt="" /></span> Jakarta
+                Pusat
+              </p>
+              <div class="row facility justify-content-between">
+                <p>
+                  <span><img src="images/bed.svg" alt="" /></span> 2 Bedroom
+                </p>
+                <p>
+                  <span><img src="images/shower.svg" alt="" /></span> 1 Bathroom
+                </p>
+                <p>
+                  <span><img src="images/footage.svg" alt="" /></span> 89 ft
+                  sq.footage
+                </p>
+              </div>
+              <hr />
+              <a href="#" class="card-link range">Per Month</a>
+              <a href="#" class="card-link price">Rp 3.700.000</a>
+            </div>
+          </div>
+          <div class="card" style="width: 21rem">
+            <a href="#"
+              ><img
+                src="images/listing2.jpg"
+                class="card-img-top"
+                alt="listing"
+            /></a>
+            <div class="card-body">
+              <h6 class="card-title">
+                <span><img src="images/house.svg" alt="" /></span> Apartement
+              </h6>
+              <h2 class="card-text">The Residence CW 2</h2>
+              <p class="location">
+                <span><img src="images/location.svg" alt="" /></span> Jakarta
+                Pusat
+              </p>
+              <div class="row facility justify-content-between">
+                <p>
+                  <span><img src="images/bed.svg" alt="" /></span> 2 Bedroom
+                </p>
+                <p>
+                  <span><img src="images/shower.svg" alt="" /></span> 1 Bathroom
+                </p>
+                <p>
+                  <span><img src="images/footage.svg" alt="" /></span> 89 ft
+                  sq.footage
+                </p>
+              </div>
+              <hr />
+              <a href="#" class="card-link range">Per Month</a>
+              <a href="#" class="card-link price">Rp 3.700.000</a>
+            </div>
+          </div>
+          <div class="card" style="width: 21rem">
+            <a href="#"
+              ><img
+                src="images/listing3.jpg"
+                class="card-img-top"
+                alt="listing"
+            /></a>
+            <div class="card-body">
+              <h6 class="card-title">
+                <span><img src="images/house.svg" alt="" /></span> Apartement
+              </h6>
+              <h2 class="card-text">The Orchard Ciputra world 2</h2>
+              <p class="location">
+                <span><img src="images/location.svg" alt="" /></span> Jakarta
+                Pusat
+              </p>
+              <div class="row facility justify-content-between">
+                <p>
+                  <span><img src="images/bed.svg" alt="" /></span> 2 Bedroom
+                </p>
+                <p>
+                  <span><img src="images/shower.svg" alt="" /></span> 1 Bathroom
+                </p>
+                <p>
+                  <span><img src="images/footage.svg" alt="" /></span> 89 ft
+                  sq.footage
+                </p>
+              </div>
+              <hr />
+              <a href="#" class="card-link range">Per Month</a>
+              <a href="#" class="card-link price">Rp 3.700.000</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.slim.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -23,5 +360,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="script/navbar-scroll.js"></script>
   </body>
 </html>
