@@ -9,13 +9,31 @@
 
   img {
     width: 90px;
+    @include media-breakpoint-only(xs) {
+      margin-left: 120px;
+    }
+  }
+
+  p {
+    @include media-breakpoint-only(xs) {
+      margin-left: 30px;
+    }
   }
 
   ul {
+    @include media-breakpoint-only(xs) {
+      display: none !important;
+    }
     margin-left: -40px;
     font-weight: bold;
     font-size: 20px;
     color: #fff;
+  }
+
+  li {
+    @include media-breakpoint-only(xs) {
+      display: none !important;
+    }
   }
 
   a {

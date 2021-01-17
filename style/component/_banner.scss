@@ -7,7 +7,13 @@
     bottom: -200px;
     line-height: 90px;
     @include media-breakpoint-only(sm) {
-      font-size: 26px;
+      margin-top: -100px;
+      line-height: 50px;
+    }
+    @include media-breakpoint-only(xs) {
+      margin-top: -20px;
+      line-height: 50px;
+      margin-left: 12px;
     }
   }
 
@@ -15,12 +21,20 @@
     color: #727f6c;
     font-size: 72px;
     font-weight: bold;
+    @include media-breakpoint-only(xs) {
+      font-size: 40px;
+      margin-top: 140px;
+      margin-bottom: 30px;
+    }
   }
 
   p {
     font-size: 24px;
     color: #727f6c;
     opacity: 62%;
+    @include media-breakpoint-only(xs) {
+      font-size: 16px;
+    }
   }
 
   .banner-image {
@@ -34,6 +48,9 @@
       display: none;
     }
     @include media-breakpoint-only(xs) {
+      display: none !important;
+    }
+    @include media-breakpoint-only(md) {
       display: none;
     }
   }
@@ -44,6 +61,9 @@
     padding: 20px;
 
     border-radius: 8px;
+    @include media-breakpoint-only(xs) {
+      margin-left: 15px;
+    }
 
     .form-select {
       margin: 10px;
@@ -51,6 +71,9 @@
       padding-left: 5px;
       border-radius: 7px;
       border: 0;
+      @include media-breakpoint-only(xs) {
+        display: inline-block;
+      }
     }
     .btn-search {
       background-color: #727f6c;

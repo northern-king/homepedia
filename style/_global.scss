@@ -22,9 +22,16 @@ body {
       margin-bottom: 20px;
       font-weight: bold;
       font-size: 36px;
+      @include media-breakpoint-only(xs) {
+        display: none !important;
+      }
     }
 
     .btn-join-us {
+      @include media-breakpoint-only(xs) {
+        z-index: 99;
+        margin-top: 167px;
+      }
       color: #c6af90;
       background-color: #fff;
       padding: 10px 30px;

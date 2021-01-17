@@ -1,11 +1,6 @@
 .navbar-home {
   padding-top: 15px;
 
-  @include media-break-point-up(sm) {
-    width: 100vw;
-    height: 100vh;
-  }
-
   @include media-breakpoint-down(md) {
     width: 100vw;
     background-color: #fff !important;
@@ -30,8 +25,8 @@
     color: #c6af90;
     border-radius: 8px;
     transition: 0.5s;
-    @include media-break-point-down(sm) {
-      margin-bottom: 20px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
     }
 
     &:hover {
