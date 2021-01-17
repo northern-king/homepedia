@@ -7,6 +7,11 @@
     font-size: 40px;
   }
   .card {
+    border: 0;
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(138, 70, 50, 0.15);
+    -moz-box-shadow: 0px 4px 25px 0px rgba(138, 70, 50, 0.15);
+    box-shadow: 0px 4px 25px 0px rgba(138, 70, 50, 0.15);
+
     border-radius: 17px;
     margin-bottom: 20px;
 
@@ -27,11 +32,13 @@
 
       .card-text {
         font-size: 20px;
+        color: #6e798c;
       }
 
       .location {
         font-size: 12px;
         font-weight: 200;
+        color: #222222;
       }
 
       .facility {
@@ -39,6 +46,7 @@
         font-size: 11px;
         font-weight: 200;
         padding: 0 17px;
+        color: #6e798c;
       }
 
       .range {

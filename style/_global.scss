@@ -10,3 +10,31 @@ body {
 .form-control {
   background-color: #f3f3f3;
 }
+
+.join-section {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  .join-content {
+    margin-top: -230px;
+    h1 {
+      line-height: 50px;
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    .btn-join-us {
+      color: #c6af90;
+      background-color: #fff;
+      padding: 10px 30px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      &:hover {
+        color: #fff;
+        background-color: #f57831;
+      }
+    }
+  }
+}

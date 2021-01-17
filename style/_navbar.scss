@@ -1,8 +1,13 @@
 .navbar-home {
   padding-top: 15px;
-  background-color: #fff;
+
+  @include media-break-point-up(sm) {
+    width: 100vw;
+    height: 100vh;
+  }
 
   @include media-breakpoint-down(md) {
+    width: 100vw;
     background-color: #fff !important;
   }
 
@@ -25,6 +30,9 @@
     color: #c6af90;
     border-radius: 8px;
     transition: 0.5s;
+    @include media-break-point-down(sm) {
+      margin-bottom: 20px;
+    }
 
     &:hover {
       text-decoration-color: #fff;
@@ -47,9 +55,8 @@
     color: #c6af90 !important;
     font-weight: 500;
   }
-
-  .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-  }
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
