@@ -10838,7 +10838,7 @@ body {
 }
 
 .join-section .join-content {
-  margin-top: -230px;
+  margin-top: -210px;
 }
 
 .join-section .join-content h1 {
@@ -10867,7 +10867,7 @@ body {
 @media (max-width: 575.98px) {
   .join-section .join-content .btn-join-us {
     z-index: 99;
-    margin-top: 167px;
+    margin-top: 148px;
   }
 }
 

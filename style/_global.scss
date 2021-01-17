@@ -15,7 +15,7 @@ body {
   margin-top: 200px;
   margin-bottom: 100px;
   .join-content {
-    margin-top: -230px;
+    margin-top: -210px;
     h1 {
       line-height: 50px;
       color: #fff;
@@ -30,7 +30,7 @@ body {
     .btn-join-us {
       @include media-breakpoint-only(xs) {
         z-index: 99;
-        margin-top: 167px;
+        margin-top: 148px;
       }
       color: #c6af90;
       background-color: #fff;
