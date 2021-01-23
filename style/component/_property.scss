@@ -8,7 +8,7 @@
   }
   .card {
     @include media-breakpoint-only(xs) {
-      margin-left: 20px;
+      margin-left: 7px;
       overflow-y: scroll;
     }
     border: 0;
@@ -28,6 +28,7 @@
         font-size: 14px;
         color: #f57831;
         margin-top: 10px;
+        display: inline-block;
         img {
           height: 24px;
           width: 24px;

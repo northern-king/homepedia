@@ -9,9 +9,25 @@
   .nav-item {
     .nav-link {
       font-size: 1rem;
+
       @include media-breakpoint-up(lg) {
         margin-left: 10px;
-        margin-right: 10px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    background-color: #c6af90;
+    @media (min-width: 45em) {
+      background-color: #c6ae90;
+      backdrop-filter: blur(5px);
+    }
+
+    .dropdown-item {
+      color: #fff;
+
+      &:hover {
+        background-color: #727f6c;
       }
     }
   }
