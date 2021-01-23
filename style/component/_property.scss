@@ -7,10 +7,6 @@
     font-size: 40px;
   }
   .card {
-    @include media-breakpoint-only(xs) {
-      margin-left: 7px;
-      overflow-y: scroll;
-    }
     border: 0;
     -webkit-box-shadow: 0px 4px 25px 0px rgba(138, 70, 50, 0.15);
     -moz-box-shadow: 0px 4px 25px 0px rgba(138, 70, 50, 0.15);
@@ -25,13 +21,15 @@
     .card-body {
       padding: 15px;
       .card-title {
-        font-size: 14px;
+        width: 100%;
+        font-size: 21px;
         color: #f57831;
         margin-top: 10px;
-        display: inline-block;
+        display: inline-flex;
+
         img {
-          height: 24px;
-          width: 24px;
+          height: 26px;
+          width: 26px;
         }
       }
 
@@ -44,14 +42,29 @@
         font-size: 12px;
         font-weight: 200;
         color: #222222;
+        display: inline-flex;
+        margin-top: 10px;
+        width: 100%;
       }
 
+      .row {
+        display: inline-block;
+      }
       .facility {
+        width: 100%;
         margin-top: 20px;
         font-size: 11px;
         font-weight: 200;
         padding: 0 17px;
         color: #6e798c;
+        display: inline-block;
+        p,
+        span {
+          display: inline-flex;
+        }
+        span {
+          padding-right: 4px;
+        }
       }
 
       .range {

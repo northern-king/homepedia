@@ -1,5 +1,11 @@
 .navbar-home {
   padding-top: 15px;
+  @media (max-width: 45em) {
+    padding-top: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+      0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+      0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  }
 
   @include media-breakpoint-down(md) {
     width: 100vw;
@@ -32,10 +38,6 @@
     }
   }
 
-  .profile-picture {
-    max-height: 45px;
-  }
-
   .btn-login {
     border: 1px solid #c6af90;
     color: #c6af90;
@@ -59,7 +61,7 @@
 
     &:hover {
       background-color: #cf903a;
-      cursor: ne-resize;
+      cursor: pointer;
     }
   }
   .active {
@@ -70,4 +72,10 @@
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
   transition: background-color 200ms linear;
+}
+
+@media (max-width: 45em) {
+  .navbar-brand {
+    max-width: 2rem;
+  }
 }

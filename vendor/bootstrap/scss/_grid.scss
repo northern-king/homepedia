@@ -44,7 +44,6 @@
   }
 }
 
-
 // Row
 //
 // Rows contain your columns.
@@ -72,6 +71,6 @@
 //
 // Common styles for small and large grid columns
 
-@if $enable-grid-classes {
-  @include make-grid-columns();
-}
+// @if $enable-grid-classes {
+//   @include make-grid-columns();
+// }

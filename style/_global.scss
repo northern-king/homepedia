@@ -34,7 +34,9 @@ p {
 .container {
   width: 85%;
   max-width: 65em;
-  margin: 0 auto;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .spacing > * + * {
@@ -89,6 +91,10 @@ p {
   font-size: 1.125rem;
   border-radius: 0.29em;
   transition: transform 250ms ease-in-out, opacity 175ms linear;
+
+  @media (max-width: 45em) {
+    display: block;
+  }
 }
 
 .btn-apply-now:hover,
@@ -97,4 +103,9 @@ p {
   background-color: #727f6c;
   color: #fff;
   text-decoration: none;
+}
+
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
 }
