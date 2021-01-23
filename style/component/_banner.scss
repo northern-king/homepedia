@@ -1,77 +1,182 @@
-.banner-section {
-  height: 100vh;
-  width: 100vw;
-
-  .title {
-    position: relative;
-    bottom: -200px;
-    line-height: 90px;
-  }
+.hero-banner {
+  margin-top: 7em;
+  width: 100%;
 
   h1 {
     color: #727f6c;
-    font-size: 72px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 3.9rem;
+
+    margin-bottom: 0.4em;
   }
+
   p {
+    color: #727f6c8e;
     font-size: 24px;
-    color: #727f6c;
-    opacity: 62%;
+    margin-bottom: 3.2em;
   }
 
-  .banner-image {
-    z-index: 3;
-    max-height: 576px;
-    margin-top: 135px;
-    justify-content: right;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-  }
+  .btn-theme-2 {
+    background-color: #c6af90;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.7s;
 
-  .search-box {
-    margin-top: 260px;
-    background-color: #f5f5f5;
-    padding: 20px;
-
-    border-radius: 8px;
-
-    .form-select {
-      margin: 10px;
-      width: 200px;
-      padding-left: 5px;
-      border-radius: 7px;
-      border: 0;
+    &:hover {
+      background-color: #727f6c;
+      transform: scale(1.1);
     }
+  }
+
+  .btn-play {
+    background-color: #d7e2d3;
+    color: #727f6c;
+    border-radius: 100%;
+    margin-left: 20px;
+
+    &:hover {
+      color: #fff;
+      background-color: #727f6c;
+    }
+  }
+
+  .image {
+    overflow: hidden;
+
+    @media (max-width: 45em) {
+      display: none;
+    }
+  }
+}
+
+.search-section {
+  margin-top: 70px;
+  margin-bottom: 100px;
+
+  .search-area {
+    border-radius: 8px;
+    padding: 1rem 1.3rem;
+    height: 5.5em;
+
+    @media (max-width: 45em) {
+      margin-left: -30px;
+      height: 9.8em;
+      width: auto;
+      display: block;
+      justify-content: center;
+    }
+
     .btn-search {
       background-color: #727f6c;
+    }
+  }
 
-      &:hover {
-        background-color: darkolivegreen;
+  .toggle {
+    position: absolute;
+    width: 8em;
+    height: 3.5em;
+    font-size: 16px;
+    margin: 0;
+    filter: opacity(0);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .toggle ~ .switch {
+    position: absolute;
+    width: 8em;
+    height: 4em;
+    font-size: 14px;
+
+    border-radius: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggle ~ .switch .inner {
+    width: 8em;
+    height: 3.5em;
+    background-color: #727f6c;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggle ~ .switch .inner .disc {
+    width: 5.2em;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #c6af90;
+    position: relative;
+    left: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+
+  .toggle ~ .switch .inner .disc::before {
+    content: "SEWA";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: calc(3.5em * 0.8);
+    font-family: sans-serif;
+    color: gray;
+  }
+
+  .toggle:checked ~ .switch .inner {
+    background-color: #c6af90;
+  }
+
+  .toggle:checked ~ .switch .inner .disc {
+    left: 30%;
+  }
+
+  .toggle:checked ~ .switch .inner .disc::before {
+    content: "BELI";
+    color: #727f6c;
+  }
+
+  .input-group {
+    margin-left: 8em;
+    margin-top: 4px;
+    height: 3rem;
+    width: auto;
+
+    appearance: none;
+    @media (max-width: 45em) {
+      margin: 0;
+      margin-top: 73px;
+      width: auto;
+    }
+  }
+
+  .btn-outline-secondary {
+    background-color: #c6af90;
+    border: 1px solid #c6af90;
+    width: 3.7rem;
+    border-radius: 0 10px 10px 0;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #727f6c;
+      border: 1px solid #727f6c;
+      i {
+        transform: scale(2);
       }
     }
-
-    .search-buy {
-      background-color: #ffffff;
-      justify-content: space-between;
-      border-radius: 5px;
-    }
-
-    .nav-item {
-      .nav-link {
-        color: #696969;
-        background-color: transparent;
-
-        &:hover {
-          border-bottom: 2px solid #696969;
-          border-radius: 0;
-        }
-
-        &.active {
-          border-bottom: 2px solid #696969;
-          font-weight: bold;
-          border-radius: 0;
-        }
-      }
-    }
+  }
+  .form-select {
+    border: 1px solid #c6af90;
+    color: #5a5a5a;
+    border-radius: 10px;
   }
 }

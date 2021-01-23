@@ -1,6 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   scroll-behavior: smooth;
+  margin: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .page-content {
@@ -9,4 +29,83 @@ body {
 
 .form-control {
   background-color: #f3f3f3;
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.spacing > * + * {
+  margin-top: 2rem;
+}
+
+.product {
+  background-color: #c6af90;
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 5em;
+  margin-top: 6.7em;
+  text-align: center;
+
+  .product__title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  .product__description {
+    color: rgba(255, 255, 255, 0.424);
+  }
+
+  .product__image {
+    margin: -135px 0 0 0;
+  }
+  @media (min-width: 45em) {
+    text-align: left;
+
+    .product__title {
+      margin: 0;
+    }
+
+    .product__image {
+      float: right;
+      width: 39%;
+      shape-outside: url(../images/agent.png);
+      shape-margin: 1em;
+    }
+  }
+}
+
+.btn-apply-now {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  color: #c6af90;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 0.29em;
+  transition: transform 250ms ease-in-out, opacity 175ms linear;
+
+  @media (max-width: 45em) {
+    display: block;
+  }
+}
+
+.btn-apply-now:hover,
+.btn-apply-now:focus {
+  transform: scale(1.1);
+  background-color: #727f6c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
 }

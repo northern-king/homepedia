@@ -1,0 +1,134 @@
+$button_width: 4em;
+$button_height: 4em;
+$button_color: #727f6c;
+$button_icon: "\1F4AC";
+$inner_color: #c6af90;
+
+.action-button {
+  display: block;
+  position: fixed;
+  width: $button_width;
+  height: $button_height;
+  z-index: 10;
+  bottom: 1em;
+  right: 1em;
+  color: #fff;
+  background: $button_color;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0.1em 0 0.25em rgba(0, 0, 0, 0.15), 0.2em 0 1em rgba(0, 0, 0, 0.2);
+
+  // Button Icon
+  &::after {
+    content: $button_icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  // Container of Box Content
+  &-content {
+    background-color: white;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: 15;
+    bottom: 2em;
+    right: 2em;
+    transform-origin: bottom right;
+    transition: box-shadow 50ms ease-out, border-radius 50ms ease-out 25ms,
+      width 90ms ease-in, height 60ms ease-in;
+
+    // Box Content:
+    &-inner {
+      opacity: 0;
+      transition: opacity 30ms ease-out 0;
+      padding: 40px;
+      h2 {
+        color: black;
+        margin: 0 0 1.7em 0;
+        padding: 0;
+        font-size: 24px;
+      }
+      .btn {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        color: $inner_color;
+        border: 1px solid $inner_color;
+        border-radius: 3px;
+        margin-bottom: 1.5em;
+        transition: color 50ms linear, background 50ms linear;
+        text-decoration: none;
+        &:hover {
+          color: white;
+          background: $inner_color;
+        }
+      }
+
+      // Close Arrow
+      &::after {
+        content: "\231F";
+        position: absolute;
+        font-size: 25px;
+        top: 5px;
+        right: 15px;
+        color: #666;
+        pointer-events: auto;
+        transform: rotate(45deg);
+        cursor: pointer;
+      }
+    }
+  }
+
+  // When Action Box is Open:
+  .actionsBoxOpen & {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1.5em;
+      height: 1.5em;
+      padding: 0.25em;
+      transform-origin: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 200%;
+      font-weight: 100;
+      line-height: 0.95em;
+      text-align: center;
+      border-radius: 50%;
+      transition: all 400ms ease-out;
+    }
+
+    // Container of Box Content
+    &-content {
+      pointer-events: none;
+      width: 400px;
+      height: 400px;
+      cursor: default;
+      box-shadow: 0 0 40px rgba(black, 0.4);
+      border-radius: 0;
+      bottom: 2em;
+      right: 2em;
+      transform-origin: bottom right;
+      transition: box-shadow 50ms ease-in 100ms,
+        border-radius 50ms ease-in 100ms, width 150ms ease-in,
+        height 150ms ease-in;
+      @media (max-width: 45em) {
+        width: 20em;
+        height: 23.4em;
+      }
+
+      // Box Content:
+      &-inner {
+        opacity: 1;
+        transition: opacity 100ms ease-out 200ms;
+        .btn {
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+}

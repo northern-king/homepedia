@@ -1,23 +1,41 @@
 .navbar-home {
   padding-top: 15px;
-  background-color: #fff;
+  @media (max-width: 45em) {
+    padding-top: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+      0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+      0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  }
 
   @include media-breakpoint-down(md) {
+    width: 100vw;
     background-color: #fff !important;
   }
 
   .nav-item {
     .nav-link {
       font-size: 1rem;
+
       @include media-breakpoint-up(lg) {
         margin-left: 10px;
-        margin-right: 10px;
       }
     }
   }
 
-  .profile-picture {
-    max-height: 45px;
+  .dropdown-menu {
+    background-color: #c6af90;
+    @media (min-width: 45em) {
+      background-color: #c6ae90;
+      backdrop-filter: blur(5px);
+    }
+
+    .dropdown-item {
+      color: #fff;
+
+      &:hover {
+        background-color: #727f6c;
+      }
+    }
   }
 
   .btn-login {
@@ -25,6 +43,9 @@
     color: #c6af90;
     border-radius: 8px;
     transition: 0.5s;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
 
     &:hover {
       text-decoration-color: #fff;
@@ -40,16 +61,21 @@
 
     &:hover {
       background-color: #cf903a;
-      cursor: ne-resize;
+      cursor: pointer;
     }
   }
   .active {
     color: #c6af90 !important;
     font-weight: 500;
   }
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 
-  .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
+@media (max-width: 45em) {
+  .navbar-brand {
+    max-width: 2rem;
   }
 }
